@@ -11,7 +11,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "swgroups")
 public class Group extends BaseModel {
     private String name;
 

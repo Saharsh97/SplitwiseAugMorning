@@ -23,7 +23,6 @@ public class SettleUpController {
         this.settleUpService = settleUpService;
     }
 
-
     SettleUpUserResponseDTO settleUpUser(SettleUpUserRequestDTO requestDTO){
         SettleUpUserResponseDTO responseDTO = new SettleUpUserResponseDTO();
         try{
