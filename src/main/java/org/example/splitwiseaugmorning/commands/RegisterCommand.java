@@ -7,7 +7,7 @@ public class RegisterCommand implements Command{
     @Override
     public boolean matches(String input) {
         String[] words = input.split(" ");
-        return words[0].equals("register");
+        return words[0].equals("Register");
     }
 
     @Override

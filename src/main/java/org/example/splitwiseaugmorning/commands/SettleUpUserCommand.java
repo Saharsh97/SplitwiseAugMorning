@@ -22,7 +22,7 @@ public class SettleUpUserCommand implements Command{
     @Override
     public boolean matches(String input) {
         String[] words = input.split(" ");
-        return words[0].equals("settleUpUser");
+        return words[0].equals("SettleUpUser");
     }
 
     @Override

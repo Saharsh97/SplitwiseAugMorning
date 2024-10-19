@@ -36,7 +36,7 @@ public class SplitWiseAugMorningApplication implements CommandLineRunner {
 		}
 	}
 
-	public static void runAppServer(String[] args) {
+	public static void main(String[] args) {
 		SpringApplication.run(SplitWiseAugMorningApplication.class, args);
 	}
 }

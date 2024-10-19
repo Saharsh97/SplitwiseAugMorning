@@ -21,7 +21,7 @@ public class SettleUpGroupCommand implements Command{
     @Override
     public boolean matches(String input) {
         String[] words = input.split(" ");
-        return words[0].equals("settleUpGroup");
+        return words[0].equals("SettleUpGroup");
     }
 
     @Override
@@ -34,5 +34,6 @@ public class SettleUpGroupCommand implements Command{
 
         System.out.println(responseDTO.getSettleUpTransaction());
         System.out.println(responseDTO.getStatus());
+        System.out.println(responseDTO.getMessage());
     }
 }

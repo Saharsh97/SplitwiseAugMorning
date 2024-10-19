@@ -32,6 +32,6 @@ public class CommandExecutor {
                 return;
             }
         }
-        throw new RuntimeException("input doesnt match with any of the commands");
+        System.out.println("input doesnt match with any of the commands");
     }
 }
