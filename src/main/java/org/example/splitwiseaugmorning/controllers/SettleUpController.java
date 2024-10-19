@@ -23,10 +23,10 @@ public class SettleUpController {
         this.settleUpService = settleUpService;
     }
 
-    SettleUpUserResponseDTO settleUpUser(SettleUpUserRequestDTO requestDTO){
+    public SettleUpUserResponseDTO settleUpUser(SettleUpUserRequestDTO requestDTO){
         SettleUpUserResponseDTO responseDTO = new SettleUpUserResponseDTO();
         try{
-            List<Transaction> transactionList = settleUpService.settleUpGroup(requestDTO.getUserId());
+            List<Transaction> transactionList = settleUpService.settleUpUser(requestDTO.getUserId());
 
             responseDTO.setStatus(ResponseStatus.SUCCESS);
             responseDTO.setMessage("generated transactions successfully");
@@ -39,7 +39,7 @@ public class SettleUpController {
         return responseDTO;
     }
 
-    SettleUpGroupResponseDTO settleUpGroup(SettleUpGroupRequestDTO requestDTO){
+    public SettleUpGroupResponseDTO settleUpGroup(SettleUpGroupRequestDTO requestDTO){
         SettleUpGroupResponseDTO responseDTO = new SettleUpGroupResponseDTO();
         try{
             List<Transaction> transactionList = settleUpService.settleUpGroup(requestDTO.getGroupId());

@@ -47,14 +47,38 @@ public class Expense extends BaseModel {
 // Exp 1: whoPaid: S : 1000, J : 1000
 //        whoHadToPay: N: 500 Su: 500  Y: 200 Sm: 300 S: 200 J:300
 
+// Goa Group
 // Exp1 : [
 //          {S, 1000, HAD_PAID},
-//          {N, 500, HAD_TO_PAY},
+//          {N, 500, HAD_TO_PAY},   output
 //          {J, 1000, HAD_PAY},
-//          {N, 500, HAD_TO_PAY}
+//          {N, 500, HAD_TO_PAY}    output
 //          {Su, 500, HAD_TO_PAY}
 //          {Y, 200, HAD_TO_PAY}
 //          {Sm, 300, HAD_TO_PAY}
 //          {S, 200, HAD_TO_PAY}
 //          {J, 300, HAD_TO_PAY}
+//        ]
+
+// individual expense
+// Exp2 : [
+//          {S, 1000, HAD_PAID},
+//          {N, 500, HAD_TO_PAY},   output
+//          {S, 500, HAD_TO_PAY},
+//        ]
+
+// Exp3 : [
+//          {J, 1000, HAD_PAID},
+//          {A, 500, HAD_TO_PAY},
+//          {J, 500, HAD_TO_PAY},
+//        ]
+
+
+// Trip Expense
+// Exp4 : [
+//          {S, 1000, HAD_PAID},
+//          {M, 2000, HAD_PAID}
+//          {N, 1000, HAD_TO_PAY},  output
+//          {S, 1000, HAD_TO_PAY},
+//          {M, 1000, HAD_TO_PAY}
 //        ]
